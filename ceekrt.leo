@@ -15,10 +15,14 @@
 <v t="peckj.20130227152029.1396"><vh>@file views.py</vh></v>
 </v>
 <v t="peckj.20130227152029.1395"><vh>@file runserver.py</vh></v>
+<v t="peckj.20130227152029.1398" a="E"><vh>@path instance</vh>
+<v t="peckj.20130227152029.1397"><vh>@file application.cfg</vh></v>
+</v>
 <v t="peckj.20130227152029.1391"><vh>@file ceekrt.fcgi</vh></v>
 <v t="peckj.20130227152029.1390"><vh>@file README.md</vh></v>
 </vnodes>
 <tnodes>
 <t tx="peckj.20130227152029.1389"></t>
+<t tx="peckj.20130227152029.1398"></t>
 </tnodes>
 </leo_file>

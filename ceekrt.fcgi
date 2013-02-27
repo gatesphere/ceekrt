@@ -10,7 +10,7 @@ from flup.server.fcgi import WSGIServer
 from werkzeug.contrib.fixers import LighttpdCGIRootFix
 from ceekrt import app
 
-sock = '/tmp/ceekrt-test.sock-0'
+sock = app.config['SOCKFILE']
 
 if __name__ == '__main__':
   app.wsgi_app = LighttpdCGIRootFix(app.wsgi_app)
