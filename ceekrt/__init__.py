@@ -1,5 +1,5 @@
 #@+leo-ver=5-thin
-#@+node:peckj.20130227152029.1392: * @file __init__.py
+#@+node:peckj.20130227152029.1392: * @file ceekrt/__init__.py
 #@@language python
 #@@tabwidth -2
 

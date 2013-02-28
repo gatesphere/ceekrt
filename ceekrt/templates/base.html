@@ -42,6 +42,18 @@
       {% include "_header.html" %}
     {% endblock header %}
     <!--@-<< header >>-->
+    <!--@+<< flash >>-->
+    <!--@+node:peckj.20130228101737.1701: ** << flash >>-->
+    {% block flash %}
+      {% with messages = get_flashed_messages() %}
+        {% if messages %}
+          {% for category, message in messages %}
+            <div id="{{ category }}">{{ message }}</div>
+          {% endfor %}
+        {% endif %}
+      {% endwith %}
+    {% endblock flash %}
+    <!--@-<< flash >>-->
     <!--@+<< content >>-->
     <!--@+node:peckj.20130228101737.1699: ** << content >>-->
     {% block content %}
