@@ -69,7 +69,7 @@
 <v t="peckj.20130228101737.1718"><vh>ceekrt styling</vh>
 <v t="peckj.20130228101737.1548"></v>
 </v>
-<v t="peckj.20130228101737.1719" a="E"><vh>application config</vh>
+<v t="peckj.20130228101737.1719"><vh>application config</vh>
 <v t="peckj.20130227152029.1397"></v>
 </v>
 </vnodes>
