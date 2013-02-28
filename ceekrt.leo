@@ -21,13 +21,11 @@
 <v t="peckj.20130228101737.1650"><vh>@file _meta.html</vh></v>
 <v t="peckj.20130228101737.1651"><vh>@file _style.html</vh></v>
 <v t="peckj.20130228101737.1641"><vh>@file _js.html</vh></v>
-<v t="peckj.20130228101737.1635"
-expanded="peckj.20130228101737.1636,"><vh>@file _header.html</vh></v>
+<v t="peckj.20130228101737.1635"><vh>@file _header.html</vh></v>
 <v t="peckj.20130228101737.1631"><vh>@file _footer.html</vh></v>
 </v>
 <v t="peckj.20130228101737.1693" a="E"><vh>layouts</vh>
-<v t="peckj.20130228101737.1617"
-expanded="peckj.20130228101737.1618,peckj.20130228101737.1619,peckj.20130228101737.1621,peckj.20130228101737.1622,"><vh>@file base.html</vh></v>
+<v t="peckj.20130228101737.1617"><vh>@file base.html</vh></v>
 <v t="peckj.20130228101737.1685"><vh>@file placeholder.html</vh></v>
 <v t="peckj.20130228101737.1680"><vh>@file page.html</vh></v>
 <v t="peckj.20130228101737.1655"><vh>@file index.html</vh></v>
