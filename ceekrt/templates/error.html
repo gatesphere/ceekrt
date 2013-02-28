@@ -1,0 +1,29 @@
+<!--@+leo-ver=5-thin-->
+<!--@+node:peckj.20130228101737.1653: * @file error.html-->
+<!--@@language xml-->
+<!--@@tabwidth -2-->
+<!--@+others-->
+<!--@+node:peckj.20130228101737.1654: ** title-->
+{% extends "base.html" %}
+
+{% block title %}
+<title>error {{ error }} | suspended-chord.info</title>
+<!--@-others-->
+
+{% endblock title %}
+
+{# don't want QR code on error pages... #}
+{% block header %}
+<header>
+  <div id="headerdiv">
+  <a href="{{ url_for('index') }}"><img id="logo" src="{{ url_for('static', filename='assets/img/logo.png') }}" /></a>
+  </div>
+  <hr />
+</header>
+{% endblock header %}
+
+{% block content %}
+  <h1>error {{ error }}</h1>
+  <p>Sorry.  Would you like to go back <a href="{{ url_for('index') }}">home</a>?</p>
+{% endblock content %}
+<!--@-leo-->

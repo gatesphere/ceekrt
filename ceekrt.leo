@@ -11,7 +11,30 @@
 <find_panel_settings/>
 <vnodes>
 <v t="peckj.20130227152029.1389" a="E"><vh>@path ceekrt</vh>
-<v t="peckj.20130227152029.1392" a="E"><vh>@file __init__.py</vh></v>
+<v t="peckj.20130228101737.1544" a="E"><vh>@path static</vh>
+<v t="peckj.20130228101737.1547" a="E"><vh>@path css</vh>
+<v t="peckj.20130228101737.1548"><vh>@file style.css</vh></v>
+</v>
+</v>
+<v t="peckj.20130228101737.1545" a="E"><vh>@path templates</vh>
+<v t="peckj.20130228101737.1692"><vh>partials</vh>
+<v t="peckj.20130228101737.1650"><vh>@file _meta.html</vh></v>
+<v t="peckj.20130228101737.1651"><vh>@file _style.html</vh></v>
+<v t="peckj.20130228101737.1641"><vh>@file _js.html</vh></v>
+<v t="peckj.20130228101737.1635"
+expanded="peckj.20130228101737.1636,"><vh>@file _header.html</vh></v>
+<v t="peckj.20130228101737.1631"><vh>@file _footer.html</vh></v>
+</v>
+<v t="peckj.20130228101737.1693" a="E"><vh>layouts</vh>
+<v t="peckj.20130228101737.1617"
+expanded="peckj.20130228101737.1618,peckj.20130228101737.1619,peckj.20130228101737.1621,peckj.20130228101737.1622,"><vh>@file base.html</vh></v>
+<v t="peckj.20130228101737.1685"><vh>@file placeholder.html</vh></v>
+<v t="peckj.20130228101737.1680"><vh>@file page.html</vh></v>
+<v t="peckj.20130228101737.1655"><vh>@file index.html</vh></v>
+<v t="peckj.20130228101737.1653"><vh>@file error.html</vh></v>
+</v>
+</v>
+<v t="peckj.20130227152029.1392"><vh>@file __init__.py</vh></v>
 <v t="peckj.20130227152029.1396"><vh>@file views.py</vh></v>
 </v>
 <v t="peckj.20130227152029.1395"><vh>@file runserver.py</vh></v>
@@ -24,5 +47,10 @@
 <tnodes>
 <t tx="peckj.20130227152029.1389"></t>
 <t tx="peckj.20130227152029.1398"></t>
+<t tx="peckj.20130228101737.1544"></t>
+<t tx="peckj.20130228101737.1545"></t>
+<t tx="peckj.20130228101737.1547"></t>
+<t tx="peckj.20130228101737.1692"></t>
+<t tx="peckj.20130228101737.1693"></t>
 </tnodes>
 </leo_file>

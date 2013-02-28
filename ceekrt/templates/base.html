@@ -1,0 +1,58 @@
+<!--@+leo-ver=5-thin-->
+<!--@+node:peckj.20130228101737.1617: * @file base.html-->
+<!--@@language xml-->
+<!--@@tabwidth -2-->
+<!--@+others-->
+<!--@+node:peckj.20130228101737.1618: ** html-->
+<!doctype html>
+<html>
+<!--@+others-->
+<!--@+node:peckj.20130228101737.1619: *3* head-->
+
+<head>
+<!--@+others-->
+<!--@+node:peckj.20130228101737.1620: *4* title-->
+
+<meta charset="utf-8">
+{% block meta %}
+{% if page %}
+  {% with page = page %}
+    {% include "_meta.html" %}
+  {% endwith %}
+{% endif %}
+{% endblock meta %}
+{% include "_style.html" %}
+{% include "_js.html" %}
+{% block title %}
+<title>ceekrt</title>
+{% endblock title %}
+<!--@-others-->
+</head>
+<!--@+node:peckj.20130228101737.1621: *3* body-->
+<body>
+<!--@+others-->
+<!--@+node:peckj.20130228101737.1622: *4* div-->
+
+<div class="container">
+<!--@+others-->
+<!--@+node:peckj.20130228101737.1623: *5* p-->
+
+{% block header %}
+  {% include "_header.html" %}
+{% endblock header %}
+{% block content %}
+  <p>some content</p>
+{% endblock content %}
+{% block footer %}
+  {% include "_footer.html" %}
+{% endblock footer %}
+  
+<!--@-others-->
+</div>
+<!--@-others-->
+</body>
+<!--@-others-->
+</html>
+<!--@-others-->
+
+<!--@-leo-->

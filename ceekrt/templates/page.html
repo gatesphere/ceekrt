@@ -1,0 +1,35 @@
+<!--@+leo-ver=5-thin-->
+<!--@+node:peckj.20130228101737.1680: * @file page.html-->
+<!--@@language xml-->
+<!--@@tabwidth -2-->
+<!--@+others-->
+<!--@+node:peckj.20130228101737.1681: ** title-->
+{% extends "base.html" %}
+
+{% block title %}
+  <title>{{ page.title }} | suspended-chord.info</title>
+{% endblock title %}
+
+{% block content %}
+  {{ bread.links|join(" :: ")|safe }}
+  
+<!--@+node:peckj.20130228101737.1682: ** h1-->
+<h1>{{ page.title }}</h1>
+  
+  {# keep text legible - enforce short columns #}
+  
+<!--@+node:peckj.20130228101737.1683: ** div-->
+<div class="column">
+  {{ page.html|safe }}
+  </div>
+  
+  {# end scripts for simplethumbs gallery #}
+  
+<!--@+node:peckj.20130228101737.1684: ** script-->
+<script type="text/javascript">jQuery(document).ready(function(){$('#thumbnails').simplethumbs({slideshow:'#imageview'});});</script>
+<!--@-others-->
+ 
+  {# end simplethumbs script #}
+{% endblock content %}
+
+<!--@-leo-->
