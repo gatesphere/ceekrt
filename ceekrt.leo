@@ -12,11 +12,18 @@
 <vnodes>
 <v t="peckj.20130228101737.1702" a="E"><vh>TO DO</vh>
 <v t="peckj.20130228101737.1703"><vh>Static pages</vh>
+<v t="peckj.20130228101737.1723" a="E"><vh>relevant code</vh>
+<v t="peckj.20130228101737.1722"><vh>static pages</vh></v>
+</v>
 <v t="peckj.20130228101737.1704"><vh>about.html</vh></v>
 <v t="peckj.20130228101737.1706"><vh>help.html</vh></v>
 <v t="peckj.20130228101737.1705"><vh>privacy.html</vh></v>
 </v>
-<v t="peckj.20130228101737.1707"><vh>CSS styling</vh></v>
+<v t="peckj.20130228101737.1707"><vh>CSS styling</vh>
+<v t="peckj.20130228101737.1724"><vh>relevant code</vh>
+<v t="peckj.20130227152029.1397"><vh>@file instance/application.cfg</vh></v>
+</v>
+</v>
 <v t="peckj.20130228101737.1708"><vh>Database work</vh></v>
 <v t="peckj.20130228101737.1709"><vh>Submission form</vh></v>
 <v t="peckj.20130228101737.1710"><vh>Index page logic + layout</vh></v>
@@ -59,7 +66,7 @@
 </v>
 </v>
 <v t="peckj.20130228101737.1716"><vh>instance</vh>
-<v t="peckj.20130227152029.1397"><vh>@file instance/application.cfg</vh></v>
+<v t="peckj.20130227152029.1397"></v>
 </v>
 </v>
 <v t="peckj.20130228101737.1713"><vh>ceekrt logic</vh>
@@ -200,5 +207,19 @@
 <t tx="peckj.20130228101737.1717"></t>
 <t tx="peckj.20130228101737.1718"></t>
 <t tx="peckj.20130228101737.1719"></t>
+<t tx="peckj.20130228101737.1722"># static pages
+@app.route('/about')
+def about():
+  return render_template('about.html')
+  
+@app.route('/help')
+def help():
+  return render_template('help.html')
+  
+@app.route('/privacy')
+def privacy():
+  return render_template('privacy.html')</t>
+<t tx="peckj.20130228101737.1723"></t>
+<t tx="peckj.20130228101737.1724"></t>
 </tnodes>
 </leo_file>
