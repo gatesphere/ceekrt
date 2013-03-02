@@ -5,4 +5,8 @@ ceekrt
 ======
 
 ceekrt reborn
+
+notes on deployment
+-------------------
+PERMISSIONS: make sure the database file AND the app's containing directory are chmod 777'd, else cannot post secrets.
 <!--@-leo-->

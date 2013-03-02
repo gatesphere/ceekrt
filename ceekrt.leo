@@ -28,20 +28,19 @@
 <v t="peckj.20130228101737.1710"><vh>Index page logic + layout</vh></v>
 <v t="peckj.20130228101737.1711"><vh>"secret" model</vh></v>
 </v>
-<v t="peckj.20130228101737.1712"><vh>Filesystem nonsense</vh>
+<v t="peckj.20130228101737.1712" a="E"><vh>Filesystem nonsense</vh>
 <v t="peckj.20130227152029.1391"><vh>@file ceekrt.fcgi</vh></v>
 <v t="peckj.20130227152029.1395"><vh>@file runserver.py</vh></v>
 <v t="peckj.20130227152029.1390"><vh>@file README.md</vh></v>
 <v t="peckj.20130228101737.1715"><vh>ceekrt</vh>
 <v t="peckj.20130227152029.1392"><vh>@file ceekrt/__init__.py</vh></v>
-<v t="peckj.20130301225328.1472"><vh>@file ceekrt/database.py</vh></v>
+<v t="peckj.20130301225328.1472" a="E"><vh>@file ceekrt/database.py</vh></v>
 <v t="peckj.20130227152029.1396" a="E"><vh>@file ceekrt/views.py</vh></v>
 <v t="peckj.20130301225328.1475" a="E"><vh>@file ceekrt/models.py</vh></v>
 <v t="peckj.20130228101737.1714" a="E"><vh>templates</vh>
 <v t="peckj.20130228101737.1692" a="E"><vh>partials</vh>
 <v t="peckj.20130301225328.1478"><vh>@file ceekrt/templates/_form.html</vh></v>
 <v t="peckj.20130301225328.1477"><vh>@file ceekrt/templates/_list.html</vh></v>
-<v t="peckj.20130228101737.1650"><vh>@file ceekrt/templates/_meta.html</vh></v>
 <v t="peckj.20130228101737.1651"><vh>@file ceekrt/templates/_style.html</vh></v>
 <v t="peckj.20130228101737.1641"><vh>@file ceekrt/templates/_js.html</vh></v>
 <v t="peckj.20130228101737.1635"><vh>@file ceekrt/templates/_header.html</vh></v>
@@ -50,7 +49,6 @@
 <v t="peckj.20130228101737.1693" a="E"><vh>layouts</vh>
 <v t="peckj.20130228101737.1617" a="E"><vh>@file ceekrt/templates/base.html</vh></v>
 <v t="peckj.20130228101737.1685"><vh>@file ceekrt/templates/share.html</vh></v>
-<v t="peckj.20130228101737.1680" a="O"><vh>@file ceekrt/templates/page.html</vh></v>
 <v t="peckj.20130228101737.1655"><vh>@file ceekrt/templates/index.html</vh></v>
 <v t="peckj.20130228101737.1653" a="O"><vh>@file ceekrt/templates/error.html</vh></v>
 </v>
@@ -66,7 +64,7 @@
 <v t="peckj.20130228101737.1713" a="E"><vh>ceekrt logic</vh>
 <v t="peckj.20130227152029.1392"></v>
 <v t="peckj.20130227152029.1396" a="E"></v>
-<v t="peckj.20130301225328.1472"></v>
+<v t="peckj.20130301225328.1472" a="E"></v>
 <v t="peckj.20130301225328.1475" a="E"></v>
 </v>
 <v t="peckj.20130228101737.1718" a="E"><vh>ceekrt styling</vh>
@@ -91,24 +89,6 @@
   &lt;h1&gt;error {{ error }}&lt;/h1&gt;
   &lt;p&gt;Sorry.  Would you like to go back &lt;a href="{{ url_for('index') }}"&gt;home&lt;/a&gt;?&lt;/p&gt;
 {% endblock content %}
-</t>
-<t tx="peckj.20130228101737.1680">@language xml
-@tabwidth -2
-
-{% extends "base.html" %}
-
-{% block title %}
-  &lt;title&gt;{{ page.title }} | suspended-chord.info&lt;/title&gt;
-{% endblock title %}
-
-{% block content %}
-&lt;h1&gt;{{ page.title }}&lt;/h1&gt;
-{# keep text legible - enforce short columns #}
-&lt;div class="column"&gt;
-  {{ page.html|safe }}
-&lt;/div&gt;
-{% endblock content %}
-
 </t>
 <t tx="peckj.20130228101737.1692"></t>
 <t tx="peckj.20130228101737.1693"></t>
