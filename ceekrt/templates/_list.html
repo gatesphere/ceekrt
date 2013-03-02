@@ -1,0 +1,20 @@
+<!--@+leo-ver=5-thin-->
+<!--@+node:peckj.20130301225328.1477: * @file ceekrt/templates/_list.html-->
+{% for s in secrets %}
+  <div class="secret">
+    <div class="content">
+      {{ s.secret }}
+    </div>
+    <div class="metoo">
+      {{ s.metoos }}
+    </div>
+    <div class="metoobutton">
+      "[button placeholder]"
+    </div>
+    <div class="reportbutton">
+      "[button placeholder]"
+    </div>
+  </div>
+{% endfor %}
+    
+<!--@-leo-->

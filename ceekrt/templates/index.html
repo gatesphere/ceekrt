@@ -1,11 +1,13 @@
 <!--@+leo-ver=5-thin-->
-<!--@+node:peckj.20130228101737.1655: * @file index.html-->
+<!--@+node:peckj.20130228101737.1655: * @file ceekrt/templates/index.html-->
 <!--@@language xml-->
 <!--@@tabwidth -2-->
 
 {% extends "base.html" %}
 
 {% block content %}
-  <h1>Hello, world!</h1>
+  {% with secrets=secrets %}
+    {% include "_list.html" %}
+  {% endwith %}
 {% endblock content %}
 <!--@-leo-->

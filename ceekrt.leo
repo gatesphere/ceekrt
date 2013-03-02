@@ -35,16 +35,19 @@
 <v t="peckj.20130227152029.1390"><vh>@file README.md</vh></v>
 <v t="peckj.20130228101737.1715"><vh>ceekrt</vh>
 <v t="peckj.20130227152029.1392"><vh>@file ceekrt/__init__.py</vh></v>
-<v t="peckj.20130227152029.1396"><vh>@file ceekrt/views.py</vh></v>
+<v t="peckj.20130301225328.1472"><vh>@file ceekrt/database.py</vh></v>
+<v t="peckj.20130227152029.1396" a="E"><vh>@file ceekrt/views.py</vh></v>
+<v t="peckj.20130301225328.1475"><vh>@file ceekrt/models.py</vh></v>
 <v t="peckj.20130228101737.1714"><vh>templates</vh>
-<v t="peckj.20130228101737.1692"><vh>partials</vh>
+<v t="peckj.20130228101737.1692" a="E"><vh>partials</vh>
+<v t="peckj.20130301225328.1477"><vh>@file ceekrt/templates/_list.html</vh></v>
 <v t="peckj.20130228101737.1650"><vh>@file ceekrt/templates/_meta.html</vh></v>
 <v t="peckj.20130228101737.1651"><vh>@file ceekrt/templates/_style.html</vh></v>
 <v t="peckj.20130228101737.1641"><vh>@file ceekrt/templates/_js.html</vh></v>
 <v t="peckj.20130228101737.1635"><vh>@file ceekrt/templates/_header.html</vh></v>
 <v t="peckj.20130228101737.1631"><vh>@file ceekrt/templates/_footer.html</vh></v>
 </v>
-<v t="peckj.20130228101737.1693"><vh>layouts</vh>
+<v t="peckj.20130228101737.1693" a="E"><vh>layouts</vh>
 <v t="peckj.20130228101737.1617" a="O"><vh>@file ceekrt/templates/base.html</vh>
 <v t="peckj.20130228101737.1694"><vh>&lt;&lt; meta &gt;&gt;</vh></v>
 <v t="peckj.20130228101737.1695"><vh>&lt;&lt; style &gt;&gt;</vh></v>
@@ -57,7 +60,7 @@
 </v>
 <v t="peckj.20130228101737.1685" a="O"><vh>@file ceekrt/templates/placeholder.html</vh></v>
 <v t="peckj.20130228101737.1680" a="O"><vh>@file ceekrt/templates/page.html</vh></v>
-<v t="peckj.20130228101737.1655" a="O"><vh>@file ceekrt/templates/index.html</vh></v>
+<v t="peckj.20130228101737.1655"><vh>@file ceekrt/templates/index.html</vh></v>
 <v t="peckj.20130228101737.1653" a="O"><vh>@file ceekrt/templates/error.html</vh></v>
 </v>
 </v>
@@ -69,14 +72,17 @@
 <v t="peckj.20130227152029.1397"></v>
 </v>
 </v>
-<v t="peckj.20130228101737.1713"><vh>ceekrt logic</vh>
+<v t="peckj.20130228101737.1713" a="E"><vh>ceekrt logic</vh>
 <v t="peckj.20130227152029.1392"></v>
-<v t="peckj.20130227152029.1396"></v>
+<v t="peckj.20130227152029.1396" a="E"></v>
+<v t="peckj.20130301225328.1472"></v>
+<v t="peckj.20130301225328.1475"></v>
 </v>
-<v t="peckj.20130228101737.1718"><vh>ceekrt styling</vh>
+<v t="peckj.20130228101737.1718" a="E"><vh>ceekrt styling</vh>
 <v t="peckj.20130228101737.1548"></v>
+<v t="peckj.20130228101737.1714"></v>
 </v>
-<v t="peckj.20130228101737.1719"><vh>application config</vh>
+<v t="peckj.20130228101737.1719" a="E"><vh>application config</vh>
 <v t="peckj.20130227152029.1397"></v>
 </v>
 </vnodes>
@@ -119,14 +125,6 @@
   &lt;p&gt;Sorry.  Would you like to go back &lt;a href="{{ url_for('index') }}"&gt;home&lt;/a&gt;?&lt;/p&gt;
 {% endblock content %}
 </t>
-<t tx="peckj.20130228101737.1655">@language xml
-@tabwidth -2
-
-{% extends "base.html" %}
-
-{% block content %}
-  &lt;h1&gt;Hello, world!&lt;/h1&gt;
-{% endblock content %}</t>
 <t tx="peckj.20130228101737.1680">@language xml
 @tabwidth -2
 
@@ -218,7 +216,8 @@ def help():
   
 @app.route('/privacy')
 def privacy():
-  return render_template('privacy.html')</t>
+  return render_template('privacy.html')
+</t>
 <t tx="peckj.20130228101737.1723"></t>
 <t tx="peckj.20130228101737.1724"></t>
 </tnodes>

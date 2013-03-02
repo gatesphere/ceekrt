@@ -4,13 +4,19 @@
 
 from ceekrt import app
 from flask import render_template, request, flash, redirect
+from ceekrt.database import db_session
+from ceekrt.models import Secret
 
 #@+others
 #@+node:peckj.20130228101737.1720: ** index
 # main page
 @app.route('/')
 def index():
-  return render_template('index.html')
+  import random
+  secrets = set(Secret.query.all())
+  if len(secrets) > app.config['SECRETS_PER_PAGE']:
+    secrets = random.sample(secrets, app.config['SECRETS_PER_PAGE'])
+  return render_template('index.html', secrets=secrets)
 #@+node:peckj.20130228101737.1721: ** share
 # sharing a secret
 @app.route('/share', methods=['GET', 'POST'])

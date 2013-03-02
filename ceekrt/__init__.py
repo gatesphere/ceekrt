@@ -8,7 +8,10 @@ app.config.from_pyfile('application.cfg')
 
 import ceekrt.views
 
-#@+others
-#@-others
+from ceekrt.database import db_session
+@app.teardown_request
+def shutdown_session(exception=None):
+    db_session.remove()
+
 
 #@-leo
