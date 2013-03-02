@@ -5,6 +5,7 @@
 from flask import Flask
 app = Flask(__name__, instance_relative_config=True)
 app.config.from_pyfile('application.cfg')
+app.secret_key = app.config['SECRET_KEY']
 
 import ceekrt.views
 

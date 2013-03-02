@@ -21,5 +21,8 @@ class Secret(Base):
 
   def __repr__(self):
     return '<secret %r>' % (self.secret)
+    
+  def validate(self):
+    return 0 < len(self.secret) <= 140
 #@-others
 #@-leo

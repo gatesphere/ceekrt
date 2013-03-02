@@ -3,7 +3,7 @@
 #@@language python
 
 from ceekrt import app
-from flask import render_template, request, flash, redirect
+from flask import render_template, request, flash, redirect, url_for
 from ceekrt.database import db_session
 from ceekrt.models import Secret
 
@@ -23,13 +23,24 @@ def index():
 def share():
   if request.method == 'GET':
     # show form
-    return render_template('placeholder.html')
+    return render_template('share.html')
   elif request.method == 'POST':
     # act on submission
-    ## blah
-    # flash messages and return to /
-    flash('Post submitted.', 'success')
-    return redirect(url_for('index'))
+    s_con = request.form['secret_content']
+    honeypot = request.form['website']
+    if len(honeypot) != 0:
+      # spammer!  Fake success...
+      flash('Post submitted.', 'success')
+      return redirect(url_for('index'))
+    s = Secret(s_con)
+    if s.validate():
+      db_session.add(s)
+      db_session.commit()
+      flash('Post submitted.', 'success')
+      return redirect(url_for('index'))
+    else:
+      flash('Secret of incorrect length! Try again.', 'error')
+      return redirect(url_for('share'))
 #@+node:peckj.20130228101737.1722: ** static pages
 # static pages
 @app.route('/about')

@@ -1,0 +1,14 @@
+<!--@+leo-ver=5-thin-->
+<!--@+node:peckj.20130301225328.1478: * @file ceekrt/templates/_form.html-->
+<form action="{{ url_for('share') }}" method="POST">
+  <fieldset>
+    <dl>
+      <dt><label for="secret_content">Secret</label></dt>
+      <dd><input id="secret_content" name="secret_content" type="text" /></dd>
+      <dt><label class="honey" for="website">If you're human, please leave this field blank</label></dt>
+      <dd><input class="honey" id="website" name="website" type="text" /></dd>
+      <dd><input type="submit" value="share your secret"></dd>
+    </dl>
+  </fieldset>
+</form>
+<!--@-leo-->

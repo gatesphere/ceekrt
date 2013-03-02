@@ -25,7 +25,6 @@
 </v>
 </v>
 <v t="peckj.20130228101737.1708"><vh>Database work</vh></v>
-<v t="peckj.20130228101737.1709"><vh>Submission form</vh></v>
 <v t="peckj.20130228101737.1710"><vh>Index page logic + layout</vh></v>
 <v t="peckj.20130228101737.1711"><vh>"secret" model</vh></v>
 </v>
@@ -37,9 +36,10 @@
 <v t="peckj.20130227152029.1392"><vh>@file ceekrt/__init__.py</vh></v>
 <v t="peckj.20130301225328.1472"><vh>@file ceekrt/database.py</vh></v>
 <v t="peckj.20130227152029.1396" a="E"><vh>@file ceekrt/views.py</vh></v>
-<v t="peckj.20130301225328.1475"><vh>@file ceekrt/models.py</vh></v>
-<v t="peckj.20130228101737.1714"><vh>templates</vh>
+<v t="peckj.20130301225328.1475" a="E"><vh>@file ceekrt/models.py</vh></v>
+<v t="peckj.20130228101737.1714" a="E"><vh>templates</vh>
 <v t="peckj.20130228101737.1692" a="E"><vh>partials</vh>
+<v t="peckj.20130301225328.1478"><vh>@file ceekrt/templates/_form.html</vh></v>
 <v t="peckj.20130301225328.1477"><vh>@file ceekrt/templates/_list.html</vh></v>
 <v t="peckj.20130228101737.1650"><vh>@file ceekrt/templates/_meta.html</vh></v>
 <v t="peckj.20130228101737.1651"><vh>@file ceekrt/templates/_style.html</vh></v>
@@ -48,17 +48,8 @@
 <v t="peckj.20130228101737.1631"><vh>@file ceekrt/templates/_footer.html</vh></v>
 </v>
 <v t="peckj.20130228101737.1693" a="E"><vh>layouts</vh>
-<v t="peckj.20130228101737.1617" a="O"><vh>@file ceekrt/templates/base.html</vh>
-<v t="peckj.20130228101737.1694"><vh>&lt;&lt; meta &gt;&gt;</vh></v>
-<v t="peckj.20130228101737.1695"><vh>&lt;&lt; style &gt;&gt;</vh></v>
-<v t="peckj.20130228101737.1696"><vh>&lt;&lt; js &gt;&gt;</vh></v>
-<v t="peckj.20130228101737.1697"><vh>&lt;&lt; title &gt;&gt;</vh></v>
-<v t="peckj.20130228101737.1698"><vh>&lt;&lt; header &gt;&gt;</vh></v>
-<v t="peckj.20130228101737.1701"><vh>&lt;&lt; flash &gt;&gt;</vh></v>
-<v t="peckj.20130228101737.1699"><vh>&lt;&lt; content &gt;&gt;</vh></v>
-<v t="peckj.20130228101737.1700"><vh>&lt;&lt; footer &gt;&gt;</vh></v>
-</v>
-<v t="peckj.20130228101737.1685" a="O"><vh>@file ceekrt/templates/placeholder.html</vh></v>
+<v t="peckj.20130228101737.1617" a="E"><vh>@file ceekrt/templates/base.html</vh></v>
+<v t="peckj.20130228101737.1685"><vh>@file ceekrt/templates/share.html</vh></v>
 <v t="peckj.20130228101737.1680" a="O"><vh>@file ceekrt/templates/page.html</vh></v>
 <v t="peckj.20130228101737.1655"><vh>@file ceekrt/templates/index.html</vh></v>
 <v t="peckj.20130228101737.1653" a="O"><vh>@file ceekrt/templates/error.html</vh></v>
@@ -76,41 +67,17 @@
 <v t="peckj.20130227152029.1392"></v>
 <v t="peckj.20130227152029.1396" a="E"></v>
 <v t="peckj.20130301225328.1472"></v>
-<v t="peckj.20130301225328.1475"></v>
+<v t="peckj.20130301225328.1475" a="E"></v>
 </v>
 <v t="peckj.20130228101737.1718" a="E"><vh>ceekrt styling</vh>
 <v t="peckj.20130228101737.1548"></v>
-<v t="peckj.20130228101737.1714"></v>
+<v t="peckj.20130228101737.1714" a="E"></v>
 </v>
 <v t="peckj.20130228101737.1719" a="E"><vh>application config</vh>
 <v t="peckj.20130227152029.1397"></v>
 </v>
 </vnodes>
 <tnodes>
-<t tx="peckj.20130228101737.1617">@first &lt;!doctype html&gt;
-@language xml
-@tabwidth -2
-
-&lt;html&gt;
-&lt;head&gt;
-  &lt;&lt; meta &gt;&gt;
-  &lt;&lt; style &gt;&gt;
-  &lt;&lt; js &gt;&gt;
-  &lt;&lt; title &gt;&gt;  
-&lt;/head&gt;
-
-&lt;body&gt;
-  &lt;div class="container"&gt;
-    &lt;&lt; header &gt;&gt;
-    &lt;&lt; flash &gt;&gt;
-    &lt;&lt; content &gt;&gt;
-    &lt;&lt; footer &gt;&gt;
-  &lt;/div&gt;
-&lt;/body&gt;
-
-&lt;/html&gt;
-
-</t>
 <t tx="peckj.20130228101737.1653">@language xml
 @tabwidth -2
 
@@ -143,50 +110,8 @@
 {% endblock content %}
 
 </t>
-<t tx="peckj.20130228101737.1685">@language xml
-@tabwidth -2
-
-{% extends "base.html" %}
-
-{% block content %}
-&lt;h1&gt;placeholder&lt;/h1&gt;
-&lt;p&gt;This page hasn't been created yet.&lt;/p&gt;
-{% endblock content %}
-</t>
 <t tx="peckj.20130228101737.1692"></t>
 <t tx="peckj.20130228101737.1693"></t>
-<t tx="peckj.20130228101737.1694">&lt;meta charset="utf-8"&gt;
-{% block meta %}
-{% if page %}
-  {% with page = page %}
-    {% include "_meta.html" %}
-  {% endwith %}
-{% endif %}
-{% endblock meta %}</t>
-<t tx="peckj.20130228101737.1695">{% include "_style.html" %}
-</t>
-<t tx="peckj.20130228101737.1696">{% include "_js.html" %}</t>
-<t tx="peckj.20130228101737.1697">{% block title %}
-&lt;title&gt;ceekrt&lt;/title&gt;
-{% endblock title %}</t>
-<t tx="peckj.20130228101737.1698">{% block header %}
-  {% include "_header.html" %}
-{% endblock header %}</t>
-<t tx="peckj.20130228101737.1699">{% block content %}
-  &lt;p&gt;some content&lt;/p&gt;
-{% endblock content %}</t>
-<t tx="peckj.20130228101737.1700">{% block footer %}
-  {% include "_footer.html" %}
-{% endblock footer %}</t>
-<t tx="peckj.20130228101737.1701">{% block flash %}
-  {% with messages = get_flashed_messages() %}
-    {% if messages %}
-      {% for category, message in messages %}
-        &lt;div id="{{ category }}"&gt;{{ message }}&lt;/div&gt;
-      {% endfor %}
-    {% endif %}
-  {% endwith %}
-{% endblock flash %}</t>
 <t tx="peckj.20130228101737.1702"></t>
 <t tx="peckj.20130228101737.1703"></t>
 <t tx="peckj.20130228101737.1704"></t>
@@ -194,9 +119,9 @@
 <t tx="peckj.20130228101737.1706"></t>
 <t tx="peckj.20130228101737.1707"></t>
 <t tx="peckj.20130228101737.1708"></t>
-<t tx="peckj.20130228101737.1709"></t>
 <t tx="peckj.20130228101737.1710"></t>
-<t tx="peckj.20130228101737.1711"></t>
+<t tx="peckj.20130228101737.1711">needs a "visible" field
+needs a "src_ip" field</t>
 <t tx="peckj.20130228101737.1712"></t>
 <t tx="peckj.20130228101737.1713"></t>
 <t tx="peckj.20130228101737.1714"></t>
