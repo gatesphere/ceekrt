@@ -24,5 +24,8 @@ class Secret(Base):
     
   def validate(self):
     return 0 < len(self.secret) <= 140
+    
+  def people(self):
+    return ("people share", "person shares")[self.metoos == 1]
 #@-others
 #@-leo

@@ -5,14 +5,10 @@
     <div class="content">
       {{ s.secret }}
     </div>
-    <div class="metoo">
-      {{ s.metoos }}
-    </div>
-    <div class="metoobutton">
-      "[button placeholder]"
-    </div>
-    <div class="reportbutton">
-      "[button placeholder]"
+    <div class="stats">
+      [{{ s.metoos }} {{ s.people() }} this]
+      [metoo]
+      [report]
     </div>
   </div>
 {% endfor %}

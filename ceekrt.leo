@@ -32,7 +32,7 @@
 <v t="peckj.20130227152029.1391"><vh>@file ceekrt.fcgi</vh></v>
 <v t="peckj.20130227152029.1395"><vh>@file runserver.py</vh></v>
 <v t="peckj.20130227152029.1390"><vh>@file README.md</vh></v>
-<v t="peckj.20130228101737.1715"><vh>ceekrt</vh>
+<v t="peckj.20130228101737.1715" a="E"><vh>ceekrt</vh>
 <v t="peckj.20130227152029.1392"><vh>@file ceekrt/__init__.py</vh></v>
 <v t="peckj.20130301225328.1472" a="E"><vh>@file ceekrt/database.py</vh></v>
 <v t="peckj.20130227152029.1396" a="E"><vh>@file ceekrt/views.py</vh></v>
@@ -53,8 +53,9 @@
 <v t="peckj.20130228101737.1653" a="O"><vh>@file ceekrt/templates/error.html</vh></v>
 </v>
 </v>
-<v t="peckj.20130228101737.1717"><vh>static</vh>
-<v t="peckj.20130228101737.1548"><vh>@file ceekrt/static/css/style.css</vh></v>
+<v t="peckj.20130228101737.1717" a="E"><vh>static</vh>
+<v t="peckj.20130228101737.1548" a="E"
+expanded="peckj.20130301225328.1736,"><vh>@file ceekrt/static/css/style.css</vh></v>
 </v>
 </v>
 <v t="peckj.20130228101737.1716"><vh>instance</vh>
@@ -68,7 +69,8 @@
 <v t="peckj.20130301225328.1475" a="E"></v>
 </v>
 <v t="peckj.20130228101737.1718" a="E"><vh>ceekrt styling</vh>
-<v t="peckj.20130228101737.1548"></v>
+<v t="peckj.20130228101737.1548" a="E"
+expanded="peckj.20130301225328.1736,"></v>
 <v t="peckj.20130228101737.1714" a="E"></v>
 </v>
 <v t="peckj.20130228101737.1719" a="E"><vh>application config</vh>

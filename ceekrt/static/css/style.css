@@ -3,5 +3,74 @@
 /*@@language css*/
 
 /*@+others*/
+/*@+node:peckj.20130301225328.1734: ** body*/
+body {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f2f2f2;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  font-style: none;
+  text-transform: none;
+  text-decoration: none;
+  color: #444;
+}
+/*@+node:peckj.20130301225328.1735: ** container*/
+.container {
+  background-color: #fff;
+  width: 600px;
+  padding: 30px;
+  margin: auto;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+/*@+node:peckj.20130301225328.1736: ** secret*/
+.secret {
+  width: 100%;
+  padding: 5px;
+  margin: auto;
+  margin-bottom: 1.5em;
+  background: #f2f2f2;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+/*@+others*/
+/*@+node:peckj.20130301225328.1739: *3* content*/
+.content {
+  float: left;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+/*@+node:peckj.20130301225328.1742: *3* stats*/
+.stats {
+  clear: left;
+  background: #d2d2d2;
+  margin: 2px;
+  padding: 2px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+/*@-others*/
+/*@+node:peckj.20130301225328.1737: ** honey*/
+.honey {
+  visible: hidden;
+  display: none;
+}
+/*@+node:peckj.20130301225328.1743: ** share*/
+.share {
+  font-size: 16px;
+  background: #d2d2d2;
+  padding: 3px;
+  margin: 3px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
 /*@-others*/
 /*@-leo*/

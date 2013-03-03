@@ -6,6 +6,7 @@
 {% extends "base.html" %}
 
 {% block content %}
+  <a class="share" href="{{ url_for('share') }}">share your secret</a>
   {% with secrets=secrets %}
     {% include "_list.html" %}
   {% endwith %}
