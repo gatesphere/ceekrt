@@ -9,4 +9,12 @@ ceekrt reborn
 notes on deployment
 -------------------
 PERMISSIONS: make sure the database file AND the app's containing directory are chmod 777'd, else cannot post secrets.
+
+requirements
+------------
+sqlite3
+flup
+flask
+sqlalchemy
+python 2.7
 <!--@-leo-->
