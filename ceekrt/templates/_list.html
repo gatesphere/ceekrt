@@ -7,8 +7,8 @@
     </div>
     <div class="stats">
       [{{ s.metoos }} {{ s.people() }} this]
-      [metoo]
-      [report]
+      <a href="{{ url_for('metoo', id=s.id) }}">metoo</a>
+      <a href="{{ url_for('report', id=s.id) }}">report</a>
     </div>
   </div>
 {% endfor %}

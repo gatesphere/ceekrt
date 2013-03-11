@@ -13,10 +13,28 @@ from ceekrt.models import Secret
 @app.route('/')
 def index():
   import random
-  secrets = set(Secret.query.all())
+  secrets = set(Secret.query.filter(Secret.reported == 0))
   if len(secrets) > app.config['SECRETS_PER_PAGE']:
     secrets = random.sample(secrets, app.config['SECRETS_PER_PAGE'])
   return render_template('index.html', secrets=secrets)
+#@+node:peckj.20130311092117.1682: ** report and metoo
+@app.route('/report/<int:id>')
+def report(id):
+  s = list(Secret.query.filter(Secret.id == id))[0]
+  if s:
+    r = s.reported + 1
+    Secret.query.filter(Secret.id == id).update({Secret.reported: r}, False)
+    db_session.commit()
+  return redirect(url_for('index'))
+
+@app.route('/metoo/<int:id>')
+def metoo(id):
+  s = list(Secret.query.filter(Secret.id == id))[0]
+  if s:
+    r = s.metoos + 1
+    Secret.query.filter(Secret.id == id).update({Secret.metoos: r}, False)
+    db_session.commit()
+  return redirect(url_for('index'))
 #@+node:peckj.20130228101737.1721: ** share
 # sharing a secret
 @app.route('/share', methods=['GET', 'POST'])
@@ -54,6 +72,8 @@ def help():
 @app.route('/privacy')
 def privacy():
   return render_template('privacy.html')
+
+  
 #@-others
 
 #@-leo

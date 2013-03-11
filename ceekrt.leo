@@ -11,7 +11,7 @@
 <find_panel_settings/>
 <vnodes>
 <v t="peckj.20130228101737.1702" a="E"><vh>TO DO</vh>
-<v t="peckj.20130228101737.1703"><vh>Static pages</vh>
+<v t="peckj.20130228101737.1703" a="E"><vh>Static pages</vh>
 <v t="peckj.20130228101737.1723" a="E"><vh>relevant code</vh>
 <v t="peckj.20130228101737.1722"><vh>static pages</vh></v>
 </v>
@@ -19,16 +19,15 @@
 <v t="peckj.20130228101737.1706"><vh>help.html</vh></v>
 <v t="peckj.20130228101737.1705"><vh>privacy.html</vh></v>
 </v>
-<v t="peckj.20130228101737.1707"><vh>CSS styling</vh>
+<v t="peckj.20130228101737.1707" a="E"><vh>CSS styling</vh>
+<v t="peckj.20130305105050.1491"><vh>@url http://designmodo.github.com/Flat-UI</vh></v>
 <v t="peckj.20130228101737.1724"><vh>relevant code</vh>
 <v t="peckj.20130227152029.1397"><vh>@file instance/application.cfg</vh></v>
 </v>
 </v>
-<v t="peckj.20130228101737.1708"><vh>Database work</vh></v>
-<v t="peckj.20130228101737.1710"><vh>Index page logic + layout</vh></v>
 <v t="peckj.20130228101737.1711"><vh>"secret" model</vh></v>
 </v>
-<v t="peckj.20130228101737.1712" a="E"><vh>Filesystem nonsense</vh>
+<v t="peckj.20130228101737.1712"><vh>Filesystem nonsense</vh>
 <v t="peckj.20130227152029.1391"><vh>@file ceekrt.fcgi</vh></v>
 <v t="peckj.20130227152029.1395"><vh>@file runserver.py</vh></v>
 <v t="peckj.20130227152029.1390"><vh>@file README.md</vh></v>
@@ -54,7 +53,7 @@
 </v>
 </v>
 <v t="peckj.20130228101737.1717" a="E"><vh>static</vh>
-<v t="peckj.20130228101737.1548" a="E"
+<v t="peckj.20130228101737.1548"
 expanded="peckj.20130301225328.1736,"><vh>@file ceekrt/static/css/style.css</vh></v>
 </v>
 </v>
@@ -62,14 +61,14 @@ expanded="peckj.20130301225328.1736,"><vh>@file ceekrt/static/css/style.css</vh>
 <v t="peckj.20130227152029.1397"></v>
 </v>
 </v>
-<v t="peckj.20130228101737.1713" a="E"><vh>ceekrt logic</vh>
+<v t="peckj.20130228101737.1713"><vh>ceekrt logic</vh>
 <v t="peckj.20130227152029.1392"></v>
 <v t="peckj.20130227152029.1396" a="E"></v>
 <v t="peckj.20130301225328.1472" a="E"></v>
 <v t="peckj.20130301225328.1475" a="E"></v>
 </v>
 <v t="peckj.20130228101737.1718" a="E"><vh>ceekrt styling</vh>
-<v t="peckj.20130228101737.1548" a="E"
+<v t="peckj.20130228101737.1548"
 expanded="peckj.20130301225328.1736,"></v>
 <v t="peckj.20130228101737.1714" a="E"></v>
 </v>
@@ -100,8 +99,6 @@ expanded="peckj.20130301225328.1736,"></v>
 <t tx="peckj.20130228101737.1705"></t>
 <t tx="peckj.20130228101737.1706"></t>
 <t tx="peckj.20130228101737.1707"></t>
-<t tx="peckj.20130228101737.1708"></t>
-<t tx="peckj.20130228101737.1710"></t>
 <t tx="peckj.20130228101737.1711">needs a "visible" field
 needs a "src_ip" field</t>
 <t tx="peckj.20130228101737.1712"></t>
@@ -124,8 +121,10 @@ def help():
 @app.route('/privacy')
 def privacy():
   return render_template('privacy.html')
-</t>
+
+  </t>
 <t tx="peckj.20130228101737.1723"></t>
 <t tx="peckj.20130228101737.1724"></t>
+<t tx="peckj.20130305105050.1491">Awesome Flat-UI CSS.</t>
 </tnodes>
 </leo_file>
