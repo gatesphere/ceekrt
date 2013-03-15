@@ -1,0 +1,36 @@
+<!--@+leo-ver=5-thin-->
+<!--@+node:peckj.20130315105826.1540: * @file ceekrt/templates/about.html-->
+<!--@@language xml-->
+<!--@@tabwidth -2-->
+
+{% extends "base.html" %}
+{% block title %}
+<title>about | ceekrt</title>
+{% endblock title %}
+
+{% block content %}
+<p>What is ceekrt?  ceekrt is a new idea in the world of microblogging.
+ceekrt allows you to anonymously contribute your secrets to a microblog, as a
+form of release and healing. Think of ceekert as 
+<a href="http://postsecret.com/">PostSecret</a> meets 
+<a href="http://www.twitter.com/">twitter</a>.
+No names, no shame, just release.</p>
+
+<p>The idea is simple: to post a secret, simply type it into the <a href="{{ url_for('share') }}">share your secret</a>
+form, making sure to stay 140 characters or less--the bar will
+stop you if you try to type too many, and click submit. That's it!</p>
+
+<p>See a post that is malicious in intent (attempts to inject remote code, or
+to spam the site, etc.), or isn't fitting with the feeling of the community?
+There's a report button next to each secret for that reason.  But please, don't
+report secrets over-zealously because you are offended or don't agree with the
+content. This is an open community that relies upon the good judgment of its
+members.</p>
+
+<p>ceekrt is maintained by its author, <a href="http://suspended-chord.info/">Jacob Peck</a>, and is completely
+a hobby project.  Occasionally I post a secret or two of my own here.</p>
+
+<p>ceekrt is not affiliated with <a href="http://postsecret.com/">PostSecret</a> or <a href="http://www.twitter.com/">twitter</a> in any way, and uses those
+names without permission.</p>
+{% endblock content %}
+<!--@-leo-->

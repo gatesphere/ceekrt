@@ -50,6 +50,9 @@
 <v t="peckj.20130228101737.1685"><vh>@file ceekrt/templates/share.html</vh></v>
 <v t="peckj.20130228101737.1655"><vh>@file ceekrt/templates/index.html</vh></v>
 <v t="peckj.20130228101737.1653" a="O"><vh>@file ceekrt/templates/error.html</vh></v>
+<v t="peckj.20130315105826.1540"><vh>@file ceekrt/templates/about.html</vh></v>
+<v t="peckj.20130315105826.1541"><vh>@file ceekrt/templates/contact.html</vh></v>
+<v t="peckj.20130315105826.1542"><vh>@file ceekrt/templates/privacy.html</vh></v>
 </v>
 </v>
 <v t="peckj.20130228101737.1717" a="E"><vh>static</vh>
@@ -67,7 +70,7 @@ expanded="peckj.20130301225328.1736,"><vh>@file ceekrt/static/css/style.css</vh>
 <v t="peckj.20130301225328.1472" a="E"></v>
 <v t="peckj.20130301225328.1475" a="E"></v>
 </v>
-<v t="peckj.20130228101737.1718" a="E"><vh>ceekrt styling</vh>
+<v t="peckj.20130228101737.1718"><vh>ceekrt styling</vh>
 <v t="peckj.20130228101737.1548"
 expanded="peckj.20130301225328.1736,"></v>
 <v t="peckj.20130228101737.1714" a="E"></v>
@@ -114,15 +117,16 @@ needs a "src_ip" field</t>
 def about():
   return render_template('about.html')
   
-@app.route('/help')
-def help():
-  return render_template('help.html')
+@app.route('/contact')
+def contact():
+  return render_template('contact.html')
   
 @app.route('/privacy')
 def privacy():
   return render_template('privacy.html')
 
-  </t>
+  
+</t>
 <t tx="peckj.20130228101737.1723"></t>
 <t tx="peckj.20130228101737.1724"></t>
 <t tx="peckj.20130305105050.1491">Awesome Flat-UI CSS.</t>

@@ -1,0 +1,15 @@
+<!--@+leo-ver=5-thin-->
+<!--@+node:peckj.20130315105826.1541: * @file ceekrt/templates/help.html-->
+<!--@@language xml-->
+<!--@@tabwidth -2-->
+
+{% extends "base.html" %}
+{% block title %}
+<title>help | ceekrt</title>
+{% endblock title %}
+
+{% block content %}
+  <h1>error {{ error }}</h1>
+  <p>Sorry.  Would you like to go back <a href="{{ url_for('index') }}">home</a>?</p>
+{% endblock content %}
+<!--@-leo-->
